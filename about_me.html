@@ -10,25 +10,28 @@
         margin: 0;
         padding: 20px;
         font-family: sans-serif;
+        text-align: center;
       }
       h2, p {
         color: whitesmoke;
         margin-bottom: 1em;
       }
-      /* Float image to the left */
-      img.me {
-        float: left;
-        margin: 20px;
+      .wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 20px;
+      }
+      .wrapper img {
         width: 150px;
         height: auto;
       }
-      /* Clear float for content */
-      .content:after {
-        content: "";
-        display: block;
-        clear: both;
+      .text-container {
+        max-width: 600px;
+        text-align: left;
       }
-      /* Home button styling */
       .home-button {
         display: block;
         background-color: rgb(49, 49, 49);
@@ -40,26 +43,38 @@
         border: none;
         margin: 40px auto 0 auto;
       }
+      @media (max-width: 600px) {
+        .wrapper {
+          flex-direction: column;
+          align-items: center;
+        }
+        .text-container {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
     </style>
   </head>
   <body>
     <h2>A little bit about me!</h2>
-    <img class="me" src="https://i.ibb.co/3ysWJzhp/16120.jpg" alt="Tasouji" />
-    <div class="content">
-      <p>Hi, there!</p>
-      <p>I'm Emirhan, studying Computer Science at University of Toronto, Scarborough.</p>
-      <p>
-        Other than being a CS student, <i>in typical fashion</i> who has a "shower-o-phobia" (nah just kidding), I do in fact occasionally touch grass and do film photography and poetry.
-      </p>
-      <p>
-        I usually code in C, Python, and Javascript, although trying to get into Rust lately (the only cult I would like to be a member of).
-      </p>
-      <p>
-        I am half Turkish, half Persian btw (not the best combination for TSA screenings), and know English, Turkish, German, and a bit of Portuguese.
-      </p>
-      <p>
-        Please make yourself at home! (shouldn't be too much of a hassle as considering that there is a high chance of you being a fellow software developer, already being in your home)
-      </p>
+    <div class="wrapper">
+      <img class="me" src="https://i.ibb.co/3ysWJzhp/16120.jpg" alt="Tasouji" />
+      <div class="text-container">
+        <p>Hi, there!</p>
+        <p>I'm Emirhan, studying Computer Science at University of Toronto, Scarborough.</p>
+        <p>
+          Other than being a CS student, <i>in typical fashion</i> who has a "shower-o-phobia" (nah just kidding), I do in fact occasionally touch grass and do film photography and poetry.
+        </p>
+        <p>
+          I usually code in C, Python, and Javascript, although trying to get into Rust lately (the only cult I would like to be a member of).
+        </p>
+        <p>
+          I am half Turkish, half Persian btw (not the best combination for TSA screenings), and know English, Turkish, German, and a bit of Portuguese.
+        </p>
+        <p>
+          Please make yourself at home! (shouldn't be too much of a hassle as considering that there is a high chance of you being a fellow software developer, already being in your home)
+        </p>
+      </div>
     </div>
     <button class="home-button" onclick="document.location='index.html'">Home</button>
   </body>
