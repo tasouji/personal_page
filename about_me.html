@@ -1,67 +1,66 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About me!</title>
     <style>
-        body {
-            position: relative;
-            background-image: url("https://i.ibb.co/C5482btg/backstar.gif");
-        }
-        h2, p {
-            color: whitesmoke;
-        }
-        img.me {
-        position: absolute;top: 20px;
-        right: 20px;
+      body {
+        background-image: url("https://i.ibb.co/C5482btg/backstar.gif");
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+      }
+      h2, p {
+        color: whitesmoke;
+        margin-bottom: 1em;
+      }
+      /* Float image to the left */
+      img.me {
+        float: left;
+        margin: 20px;
         width: 150px;
         height: auto;
-        }
-        button {
+      }
+      /* Clear float for content */
+      .content:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      /* Home button styling */
+      .home-button {
+        display: block;
         background-color: rgb(49, 49, 49);
         color: whitesmoke;
-        width: 100px; 
-        height: 45px; 
-        cursor: pointer; 
-        font-weight: bold; 
-        margin-bottom: 10px; 
+        width: 100px;
+        height: 45px;
+        cursor: pointer;
+        font-weight: bold;
         border: none;
-        }
-
+        margin: 40px auto 0 auto;
+      }
     </style>
-    </head>
-    <title>
-        About me!
-    </title>
-    <body>
-        <button onclick="document.location='index.html'">
-            Home
-          </button>
-            <h2>A little bit about me!</h2>
-        </div>
-        <img
-          class="me"
-          src="https://i.ibb.co/3ysWJzhp/16120.jpg"
-          alt="Tasouji"
-        />
-      </div>
-            <p>Hi, there!</p>
-            <br>
-            <p>I'm Emirhan, studying Computer Science at University of Toronto, Scarborough</p>
-            <br>
-            <p>Other than being a CS student, <i>in typical fashion</i> who has a "shower-o-phobia" (nah just kidding), I do infact occasionally touch grass and do film photography and poetry.</p>
-            <br>
-            <p>I usually code in C, Python, and Javascript, although trying to get into Rust lately (the only cult I would like to be a member of), </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p>I am half Turkish, half Persian btw (not the best combination for TSA screenings)</p>
-            <p>and know English, Turkish, German, and a bit of Portuguese</p>
-            <br>
-            <br>
-            <p>Please make yourself at home! (shouldn't be too much of a hassle as considering that there is a high chance of you being a fellow software developer, already being in your home)</p>
-    </body>
+  </head>
+  <body>
+    <h2>A little bit about me!</h2>
+    <img class="me" src="https://i.ibb.co/3ysWJzhp/16120.jpg" alt="Tasouji" />
+    <div class="content">
+      <p>Hi, there!</p>
+      <p>I'm Emirhan, studying Computer Science at University of Toronto, Scarborough.</p>
+      <p>
+        Other than being a CS student, <i>in typical fashion</i> who has a "shower-o-phobia" (nah just kidding), I do in fact occasionally touch grass and do film photography and poetry.
+      </p>
+      <p>
+        I usually code in C, Python, and Javascript, although trying to get into Rust lately (the only cult I would like to be a member of).
+      </p>
+      <p>
+        I am half Turkish, half Persian btw (not the best combination for TSA screenings), and know English, Turkish, German, and a bit of Portuguese.
+      </p>
+      <p>
+        Please make yourself at home! (shouldn't be too much of a hassle as considering that there is a high chance of you being a fellow software developer, already being in your home)
+      </p>
+    </div>
+    <button class="home-button" onclick="document.location='index.html'">Home</button>
+  </body>
 </html>
