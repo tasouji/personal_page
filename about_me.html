@@ -4,14 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About me!</title>
-    <!-- Font Awesome 6 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-papNM36PK+Rh84OJUzrHMoVUM8xg9/JdH7AHzfXKxqD1ph6rwqYUqjaF1oYt0D5z7Zo1z7h6gq2yJKtR+XK7/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <style>
       body {
         background-image: url("https://i.ibb.co/C5482btg/backstar.gif");
@@ -24,6 +16,7 @@
         color: whitesmoke;
         margin-bottom: 1em;
       }
+      /* Wrapper centers the image and text on desktop */
       .wrapper {
         display: flex;
         align-items: flex-start;
@@ -32,17 +25,17 @@
         margin: 0 auto;
         gap: 20px;
       }
-
+      /* Image styling */
       .wrapper img {
         width: 150px;
         height: auto;
       }
-
+      /* Text container for constrained, wider text */
       .text-container {
         max-width: 600px;
         text-align: left;
       }
-
+      /* Social icons container */
       .social-icons {
         text-align: center;
         margin: 40px 0;
@@ -53,14 +46,15 @@
         font-size: 1.1em;
       }
       .social-icons a {
-        color: whitesmoke;
+        display: inline-block;
         margin: 0 10px;
-        font-size: 32px;
-        text-decoration: none;
       }
-      .social-icons a:hover {
-        color: #f0c040;
+      .social-icons img {
+        width: 32px;
+        height: auto;
+        vertical-align: middle;
       }
+      /* Home button styling */
       .home-button {
         display: block;
         background-color: rgb(49, 49, 49);
@@ -72,7 +66,7 @@
         border: none;
         margin: 40px auto 0 auto;
       }
-
+      /* Responsive adjustments */
       @media (max-width: 600px) {
         .wrapper {
           flex-direction: column;
@@ -109,14 +103,14 @@
     <!-- Social Media Icons with Follow Label -->
     <div class="social-icons">
       <p>Follow me on:</p>
-      <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
+      <a href="https://instagram.com/yourusername" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
       </a>
-      <a href="https://github.com/yourusername" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
+      <a href="https://github.com/yourusername" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">
       </a>
-      <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
-        <i class="fab fa-twitter"></i>
+      <a href="https://twitter.com/yourusername" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter">
       </a>
     </div>
     <!-- Home Button -->
