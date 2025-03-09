@@ -1,0 +1,42 @@
+body {
+    background-image: url("https://i.ibb.co/C5482btg/backstar.gif");
+    margin: 0;
+    padding: 0;
+  }
+
+  #image-gallery {
+    width: 50rem;
+    margin: 4rem auto;
+  }
+
+  #main-image {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: black 0px 4px 12px;
+
+  }
+
+  #thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .thumbnail {
+    width: 160px;
+    height: 90px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .home-button {
+    display: block;
+    background-color: rgb(49, 49, 49);
+    color: whitesmoke;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    margin: 40px auto 0 auto;
+  }
